@@ -1,5 +1,7 @@
 package pl.arendt.devices;
 
+import pl.arendt.Human;
+
 public abstract class Device {
 
     private String producer;
@@ -36,6 +38,22 @@ public abstract class Device {
 
     public void setYearOfProduction(Integer yearOfProduction) {
         this.yearOfProduction = yearOfProduction;
+    }
+
+
+    public Boolean sell(Human seller, Human buyer, Double price) {
+        if (seller.hasDevice(this)) {
+            if (buyer.getCash() >= price) {
+                seller.setCash(seller.getCash() + price);
+                buyer.setCash(buyer.getCash() - price);
+                seller.removeDevice(this);
+                buyer.addDevice(this);
+                System.out.println(buyer.toString() + " bought " + this.toString() + " from " + seller.toString());
+                return true;
+            }
+        }
+        System.out.println(buyer.toString() + " not bought " + this.toString() + " from " + seller.toString());
+        return false;
     }
 
     @Override

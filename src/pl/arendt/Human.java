@@ -1,5 +1,6 @@
 package pl.arendt;
 
+import pl.arendt.devices.Device;
 import pl.arendt.devices.Car;
 
 public class Human {
@@ -15,12 +16,16 @@ public class Human {
 
     private Double salary;
 
+
+    private Double cash;
+
     public Human(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.animal = null;
         this.car = null;
         this.salary = 100d;
+        this.cash = 0d;
     }
 
     public String getFirstName() {
@@ -91,16 +96,32 @@ public class Human {
         this.salary = salary;
     }
 
+    public Double getCash() {
+        return cash;
+    }
 
-    @Override
-    public String toString() {
-        return "Human{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", animal=" + animal +
-                ", car=" + car +
-                ", salary=" + salary +
-                '}';
+    public void setCash(Double cash) {
+        this.cash = cash;
+    }
+
+
+    public Boolean hasDevice(Device device) {
+        if (device instanceof Car) {
+            return device.equals(this.car);
+        }
+        return false;
+    }
+
+    public void addDevice(Device device) {
+        if (device instanceof Car) {
+           setCar((Car)device);
+        }
+    }
+
+    public void removeDevice(Device device) {
+        if (device instanceof Car) {
+            this.car = null;
+        }
     }
 
     @Override
@@ -114,7 +135,8 @@ public class Human {
         if (lastName != null ? !lastName.equals(human.lastName) : human.lastName != null) return false;
         if (animal != null ? !animal.equals(human.animal) : human.animal != null) return false;
         if (car != null ? !car.equals(human.car) : human.car != null) return false;
-        return salary != null ? salary.equals(human.salary) : human.salary == null;
+        if (salary != null ? !salary.equals(human.salary) : human.salary != null) return false;
+        return cash != null ? cash.equals(human.cash) : human.cash == null;
     }
 
     @Override
@@ -124,6 +146,19 @@ public class Human {
         result = 31 * result + (animal != null ? animal.hashCode() : 0);
         result = 31 * result + (car != null ? car.hashCode() : 0);
         result = 31 * result + (salary != null ? salary.hashCode() : 0);
+        result = 31 * result + (cash != null ? cash.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", animal=" + animal +
+                ", car=" + car +
+                ", salary=" + salary +
+                ", cash=" + cash +
+                '}';
     }
 }

@@ -60,6 +60,7 @@ public class Main {
         System.out.println(me + " = " + boss + " ? " + me.equals(boss));
         */
 
+        /*
         //Zadanie 7: create Device class
         Car c1 = new Car("Seicento", "Fiat", 2003, 3000d);
         System.out.println(c1.toString());
@@ -79,7 +80,23 @@ public class Main {
         System.out.println("--------------------------------");
         System.out.println(phone.toString());
         phone.turnOn();
+       */
 
+        //Zadanie 8: real selling
+        System.out.println("--------------------------------");
+        Human me = new Human("Mateusz", "Arendt");
+        me.setCash(36000d);
+        System.out.println("--------------------------------");
+        System.out.println(me.toString());
+        Human boss = new Human("Mikolaj", "Karolinski");
+        boss.setSalary(40000d);
+        Car car = new Car("Ceed", "Kia", 2013, 25000d);
+        boss.addDevice(car);
+        System.out.println("--------------------------------");
+        System.out.println(boss.toString());
+        System.out.println("--------------------------------");
+
+        car.sell(boss, me, 24000d);
 
     }
 }

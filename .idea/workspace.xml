@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c9bb6-2429-46b9-92a9-a80117900612" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/arendt/Saleable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/arendt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/arendt/devices/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Device.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +18,14 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Zadanie_5_check_if_you_could_buy_it" />
+        <entry key="$PROJECT_DIR$" value="Zadanie_6_one_more_thing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659195883289</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Zadanie 3 i 4: get your salary &amp; give yourself a rise">
+      <created>1659197197894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659197197894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,5 +124,16 @@
     <MESSAGE value="Zadanie 2: get yourself a car" />
     <MESSAGE value="Zadanie 3 i 4: get your salary &amp; give yourself a rise" />
     <option name="LAST_COMMIT_MESSAGE" value="Zadanie 3 i 4: get your salary &amp; give yourself a rise" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pl/arendt/devices/Device.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
