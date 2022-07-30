@@ -1,5 +1,7 @@
 package pl.arendt;
 
+import pl.arendt.devices.Car;
+
 public class Human {
 
     private String firstName;
@@ -99,5 +101,29 @@ public class Human {
                 ", car=" + car +
                 ", salary=" + salary +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Human human = (Human) o;
+
+        if (firstName != null ? !firstName.equals(human.firstName) : human.firstName != null) return false;
+        if (lastName != null ? !lastName.equals(human.lastName) : human.lastName != null) return false;
+        if (animal != null ? !animal.equals(human.animal) : human.animal != null) return false;
+        if (car != null ? !car.equals(human.car) : human.car != null) return false;
+        return salary != null ? salary.equals(human.salary) : human.salary == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName != null ? firstName.hashCode() : 0;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (animal != null ? animal.hashCode() : 0);
+        result = 31 * result + (car != null ? car.hashCode() : 0);
+        result = 31 * result + (salary != null ? salary.hashCode() : 0);
+        return result;
     }
 }

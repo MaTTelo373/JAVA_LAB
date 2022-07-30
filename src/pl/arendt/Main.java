@@ -1,5 +1,7 @@
 package pl.arendt;
 
+import pl.arendt.devices.Car;
+
 public class Main {
 
     public static void main(String[] args){
@@ -19,6 +21,7 @@ public class Main {
         System.out.println(spider.toString());
         */
 
+        /*
         System.out.println("--------------------------------");
         Human man = new Human("Mateusz", "Arendt");
 
@@ -41,6 +44,28 @@ public class Main {
         System.out.println("--------------------------------");
         man.setCar(new Car("Audi", "A4", 150000d));
         System.out.println(man.toString());
+         */
+
+        //Zadanie 6: one more thing
+        System.out.println("--------------------------------");
+        Human me = new Human("Mateusz", "Arendt");
+        System.out.println("--------------------------------");
+        System.out.println(me.toString());
+        Human boss = new Human("Mikolaj", "Karolinski");
+        System.out.println("--------------------------------");
+        System.out.println(boss.toString());
+        System.out.println("--------------------------------");
+        System.out.println(me + " = " + boss + " ? " + me.equals(boss));
+
+        Car c1 = new Car("Seicento", "Fiat", 3000d);
+        System.out.println(c1.toString());
+        System.out.println("--------------------------------");
+        Car c2 = new Car("Ceed", "Kia", 25000d);
+        Car c3 = new Car("Ceed", "Kia", 25000d);
+        System.out.println(c2.toString());
+        System.out.println("--------------------------------");
+        System.out.println(c2 + " = " + c3 + " ? " + c2.equals(c3));
+        System.out.println(c1 + " = " + c2 + " ? " + c1.equals(c2));
 
     }
 }

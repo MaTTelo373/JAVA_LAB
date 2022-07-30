@@ -64,4 +64,23 @@ public class Animal {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Animal animal = (Animal) o;
+
+        if (name != null ? !name.equals(animal.name) : animal.name != null) return false;
+        if (species != animal.species) return false;
+        return weight != null ? weight.equals(animal.weight) : animal.weight == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (species != null ? species.hashCode() : 0);
+        result = 31 * result + (weight != null ? weight.hashCode() : 0);
+        return result;
+    }
 }

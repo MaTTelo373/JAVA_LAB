@@ -17,4 +17,10 @@ public enum Species {
         return defaultWeight;
     }
 
+    @Override
+    public String toString() {
+        return "Species{" +
+                "defaultWeight=" + defaultWeight +
+                "} " + super.toString();
+    }
 }

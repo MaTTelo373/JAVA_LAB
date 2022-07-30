@@ -1,4 +1,4 @@
-package pl.arendt;
+package pl.arendt.devices;
 
 public class Car {
 
@@ -68,5 +68,29 @@ public class Car {
                 ", fuelType='" + fuelType + '\'' +
                 ", value=" + value +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Car car = (Car) o;
+
+        if (model != null ? !model.equals(car.model) : car.model != null) return false;
+        if (producer != null ? !producer.equals(car.producer) : car.producer != null) return false;
+        if (engineSize != null ? !engineSize.equals(car.engineSize) : car.engineSize != null) return false;
+        if (fuelType != null ? !fuelType.equals(car.fuelType) : car.fuelType != null) return false;
+        return value != null ? value.equals(car.value) : car.value == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = model != null ? model.hashCode() : 0;
+        result = 31 * result + (producer != null ? producer.hashCode() : 0);
+        result = 31 * result + (engineSize != null ? engineSize.hashCode() : 0);
+        result = 31 * result + (fuelType != null ? fuelType.hashCode() : 0);
+        result = 31 * result + (value != null ? value.hashCode() : 0);
+        return result;
     }
 }
