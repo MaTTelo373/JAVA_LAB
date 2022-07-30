@@ -45,6 +45,7 @@ public class Animal {
         System.out.println("my weight is now " + weight);
     }
 
+
     void takeForAWalk(int period) { // ile minut, kazde 60 minut powoduje utrate wagi o 1%
         weight -= 0.01*weight*(double)period/60d;
         weight = weight < 0 ? 0 : weight;
@@ -52,6 +53,15 @@ public class Animal {
         if (weight <= 0) {
             System.out.println("Sorry I am DEAD ...");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", species=" + species +
+                ", weight=" + weight +
+                '}';
     }
 
 }

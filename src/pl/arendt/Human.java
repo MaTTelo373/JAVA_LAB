@@ -8,10 +8,13 @@ public class Human {
 
     private Animal animal;
 
+    private Car car;
+
     public Human(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.animal = null;
+        this.car = null;
     }
 
     public String getFirstName() {
@@ -38,4 +41,22 @@ public class Human {
         this.animal = animal;
     }
 
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", animal=" + animal +
+                ", car=" + car +
+                '}';
+    }
 }
