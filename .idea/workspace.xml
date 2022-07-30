@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9c9bb6-2429-46b9-92a9-a80117900612" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/arendt/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/arendt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Main.java" afterDir="false" />
     </list>
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Zadanie_2_get_yourself_a_car" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,12 +86,20 @@
       <option name="project" value="LOCAL" />
       <updated>1659191990266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Zadanie 3 i 4: get your salary &amp; give yourself a rise">
+      <created>1659192986618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659192986618</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Zadanie 1 - Pets feeding process" />
     <MESSAGE value="Zadanie 2: get yourself a car" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 2: get yourself a car" />
+    <MESSAGE value="Zadanie 3 i 4: get your salary &amp; give yourself a rise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 3 i 4: get your salary &amp; give yourself a rise" />
   </component>
 </project>

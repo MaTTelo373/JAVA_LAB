@@ -8,15 +8,18 @@ public class Car {
     private final String producer;
 
 
+
     private Double engineSize;
     private String fuelType;
 
+    private Double value;
 
-    public Car(String model, String producer) {
+    public Car(String model, String producer, Double value) {
         this.model = model;
         this.producer = producer;
         this.engineSize = 1.0d;
         this.fuelType = "gas";
+        this.value = value;
     }
 
     public Double getEngineSize() {
@@ -44,6 +47,18 @@ public class Car {
         return producer;
     }
 
+
+    public Double getValue() {
+        return value;
+    }
+
+    public void setValue(Double value) {
+        if (value < 0) {
+            throw new IllegalStateException("Value cannot be less than 0!");
+        }
+        this.value = value;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
@@ -51,6 +66,7 @@ public class Car {
                 ", producer='" + producer + '\'' +
                 ", engineSize=" + engineSize +
                 ", fuelType='" + fuelType + '\'' +
+                ", value=" + value +
                 '}';
     }
 }

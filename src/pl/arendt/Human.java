@@ -50,6 +50,17 @@ public class Human {
     }
 
     public void setCar(Car car) {
+        if (this.salary > car.getValue()) {
+            System.out.println("Happy day you bought:" + car.toString());
+        } else {
+            if (this.salary > car.getValue()/12d) {
+                System.out.println("Happy day you bought:" + car.toString());
+                System.out.println("Every month from now till next year you have to pay rate:" + car.getValue()/12);
+            } else {
+                System.out.println("Sorry car is too expensive! We have bikes for " + this.salary/2 + " only ...");
+                return;
+            }
+        }
         this.car = car;
     }
 
