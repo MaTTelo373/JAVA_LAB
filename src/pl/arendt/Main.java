@@ -22,6 +22,10 @@ public class Main {
         man.setCar(new Car("Ceed", "Kia"));
 
         System.out.println(man.toString());
+        man.getSalary();
+        man.setSalary(300d);
+        System.out.println("--------------------------------");
+        man.setSalary(250d);
 
     }
 }

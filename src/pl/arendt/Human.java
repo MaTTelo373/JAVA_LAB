@@ -10,11 +10,15 @@ public class Human {
 
     private Car car;
 
+
+    private Double salary;
+
     public Human(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.animal = null;
         this.car = null;
+        this.salary = 100d;
     }
 
     public String getFirstName() {
@@ -50,6 +54,31 @@ public class Human {
     }
 
 
+    public Double getSalary() {
+        System.out.println("I am poor man, my salary is "+ salary);
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        if (salary < 0) {
+            throw new IllegalStateException("Salary cannot be less than 0!");
+        }
+        if (this.salary > salary) {
+            System.out.println(salary + " is less than " + this.salary + " Your are joking i fuck this job, Buy!");
+            throw new IllegalStateException("Not acceptable!");
+        }
+        if (this.salary < salary) {
+            System.out.println("Oh nice I am going for long holidays from now!");
+        }
+        System.out.println("New salary was sent to accountant office!");
+        System.out.println("Miss Hania give you a new ticket about it ...");
+        System.out.println("Uncle Sam knows everything, your taxes will be higher !!!");
+
+
+        this.salary = salary;
+    }
+
+
     @Override
     public String toString() {
         return "Human{" +
@@ -57,6 +86,7 @@ public class Human {
                 ", lastName='" + lastName + '\'' +
                 ", animal=" + animal +
                 ", car=" + car +
+                ", salary=" + salary +
                 '}';
     }
 }
