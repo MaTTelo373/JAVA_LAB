@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9c9bb6-2429-46b9-92a9-a80117900612" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Device.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/arendt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/arendt/Species.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/Species.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/arendt/devices/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/arendt/devices/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/arendt/devices/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Zadanie_3_i_4_get_your_salary_&amp;_give_yourself_a_rise" />
+        <entry key="$PROJECT_DIR$" value="Zadanie_5_check_if_you_could_buy_it" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659194392917</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Zadanie 3 i 4: get your salary &amp; give yourself a rise">
+      <created>1659195883289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659195883289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
